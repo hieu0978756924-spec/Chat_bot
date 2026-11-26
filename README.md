@@ -103,9 +103,3 @@ Test dùng DB tạm, không đụng `data_store/app.db`.
 - Quán chưa liên kết đặt bàn: hỏi bàn trống / đặt bàn sẽ được trả lời thật là chưa liên kết, không sinh lịch bàn giả.
 - Khi có thông tin xác minh (giờ mở cửa, sức chứa), thêm vào CSV và đặt `trang_thai_hoat_dong = Đã xác minh` để mở chức năng đặt bàn cho quán đó.
 - Tìm theo phong cách ẩm thực: Âu, Á, Nhật, Hàn, Ý, Thái, Trung Hoa, Steak, Pizza, Lẩu, Nướng, Hải sản, Chay, Món Việt, Cà phê; tìm theo món tự do ("bún cá", "mì cay") trong tên / loại món của quán và thực đơn.
-
-## 6. Dữ liệu demo
-- `scripts/init_db.py --reset` sao lưu DB cũ vào `C:\Chat_bot\backup\<thời gian>\` rồi tạo lại.
-- Khung giờ bàn được sinh cho **14 ngày kể từ ngày khởi tạo** (trưa 11:00–13:30, tối 17:00–21:00), theo loại bàn 2/4/6/10 chỗ.
-  Khi hết hạn dữ liệu, bot sẽ báo "chưa có lịch bàn ngày …" — chạy lại `--reset` để sinh lịch mới.
-- Đơn mẫu DB001–DB005 được dời ngày để bắt đầu từ ngày mai.
