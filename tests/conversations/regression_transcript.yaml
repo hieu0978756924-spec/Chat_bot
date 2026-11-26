@@ -1,0 +1,39 @@
+# Test hồi quy bắt buộc: transcript lỗi gốc khi chạy run.bat (mục 0 của yêu cầu).
+# Biến: {today}, {tomorrow} được thay bằng ngày thực tế lúc chạy test.
+name: regression_transcript_muc_0
+turns:
+  - user: "hi"
+    expect:
+      intents_any: [greeting]
+      blocks_all: [greeting_short]
+      reply_not_contains: ["Mình có thể:"]          # không in lại menu đầy đủ
+
+  - user: "Tối mai kiếm giúp mình quán lẩu 4 người, tầm 7 giờ nhé."
+    expect:
+      slots: {cuisine: "Lẩu", date: "{tomorrow}", time: "19:00", party_size: 4}
+      tools:
+        - {tool: search_restaurants, params: {cuisine: "Lẩu"}}
+        - {tool: check_table_availability, params: {date: "{tomorrow}", time: "19:00", party_size: 4}}
+      blocks_all: [restaurant_list]
+      availability_matches_tools: true
+
+  - user: "Có quán nào vừa rẻ vừa có đồ chay không?"
+    expect:
+      intents_any: [search_restaurant]
+      slots: {cuisine: "Chay", date: "{tomorrow}", time: "19:00", party_size: 4}
+      slot_max: {budget_max: 200000}
+      tools:
+        - {tool: search_restaurants, params: {cuisine: "Chay"}}
+        - {tool: check_table_availability, params: {date: "{tomorrow}", time: "19:00", party_size: 4}}
+      blocks_all: [restaurant_list]
+      reply_not_contains: ["Lẩu Nhà Mình"]
+      availability_matches_tools: true
+
+  - user: "Thôi đổi sang 6 người đi."
+    expect:
+      slots: {cuisine: "Chay", date: "{tomorrow}", time: "19:00", party_size: 6}
+      slot_max: {budget_max: 200000}
+      tools:
+        - {tool: check_table_availability, params: {date: "{tomorrow}", time: "19:00", party_size: 6}}
+      blocks_all: [restaurant_list]
+      availability_matches_tools: true

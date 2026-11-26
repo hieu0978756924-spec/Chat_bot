@@ -1,0 +1,13 @@
+﻿ma_y_dinh,ten_y_dinh,cau_hoi_mau,thong_tin_can_trich_xuat
+INT001,tim_nha_hang,Tìm nhà hàng lẩu gần Quận 5,"loai_am_thuc, khu_vuc"
+INT002,goi_y_mon_an,Có món nào dưới 100 nghìn không?,"ngan_sach, loai_mon"
+INT003,kiem_tra_ban,Tối mai 19 giờ còn bàn cho 4 người không?,"ngay, gio, so_nguoi, nha_hang"
+INT004,tao_dat_ban,Đặt bàn cho 3 người lúc 18 giờ,"nha_hang, ngay, gio, so_nguoi"
+INT005,doi_dat_ban,Tôi muốn đổi giờ đặt bàn DB001 sang 19 giờ,"ma_dat_ban, gio_moi"
+INT006,huy_dat_ban,Hủy giúp tôi mã đặt bàn DB002,"ma_dat_ban, xac_nhan"
+INT007,bao_den_tre,Tôi sẽ đến trễ 20 phút,"ma_dat_ban, thoi_gian_tre"
+INT008,tang_so_nguoi,Đặt 4 người giờ tăng lên 6 người được không?,"ma_dat_ban, so_nguoi_moi"
+INT009,khieu_nai,Tôi đến nơi nhưng nhà hàng không thấy đặt bàn,"ma_dat_ban, mo_ta_su_co"
+INT010,hoi_chinh_sach,Nếu đến trễ thì nhà hàng giữ bàn bao lâu?,"nha_hang, loai_chinh_sach"
+INT011,hoi_danh_gia,Nhà hàng này được đánh giá thế nào?,ma_nha_hang
+INT012,chuyen_nhan_vien,Tôi muốn nói chuyện với nhân viên,"ly_do, thong_tin_lien_he"

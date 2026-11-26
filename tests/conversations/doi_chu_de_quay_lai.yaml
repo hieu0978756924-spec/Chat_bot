@@ -1,0 +1,21 @@
+name: doi_chu_de_roi_quay_lai
+turns:
+  - user: "Kiếm quán lẩu quận 5 cho 4 người lúc 7 giờ tối mai"
+    expect:
+      slots: {cuisine: "Lẩu", area: "Quận 5", party_size: 4, time: "19:00", date: "{tomorrow}"}
+      tools:
+        - {tool: search_restaurants, params: {cuisine: "Lẩu", area: "Quận 5"}}
+        - {tool: check_table_availability, params: {party_size: 4, time: "19:00"}}
+  - user: "À mà quán có cho mang rượu từ ngoài vào không?"
+    expect:
+      intents_any: [policy_question]
+      tools:
+        - {tool: search_policy}
+      tools_not: [search_restaurants, create_reservation]
+      blocks_all: [policy_answer, resume_question]
+      slots: {cuisine: "Lẩu", party_size: 4}
+  - user: "có, tìm tiếp đi"
+    expect:
+      tools:
+        - {tool: check_table_availability, params: {party_size: 4, time: "19:00", date: "{tomorrow}"}}
+      blocks_all: [restaurant_list]

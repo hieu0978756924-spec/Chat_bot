@@ -1,0 +1,478 @@
+{
+ "manifest": "bb033d8d3b857f12cbfde32a8d278d4595798b17cd8e0e11c35851ccdd94c93f",
+ "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+ "chunks": [
+  {
+   "id": "cs_01_phi_huy_don.md#main#0",
+   "file": "cs_01_phi_huy_don.md",
+   "title": "Điều khoản 1: Chính sách phí hủy đơn đặt bàn",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Hủy trước 2 giờ so với giờ hẹn**: Khách hàng được hủy đơn hoàn toàn miễn phí và nhận lại 100% số tiền đã đặt cọc. 2. **Hủy trong vòng từ 1 đến 2 giờ trước giờ hẹn**: Khách hàng chịu phí hủy 50% số tiền cọc; 50% tiền cọc còn lại được hoàn vào ví tài khoản ứng dụng trong vòng 24 giờ. 3. **Hủy dưới 1 giờ trước giờ hẹn**: Khách hàng không được hoàn tiền cọc (mất 100% tiền cọc) do nhà hàng đã chuẩn bị nguyên liệu và giữ chỗ."
+  },
+  {
+   "id": "cs_01_phi_huy_don.md#main#1",
+   "file": "cs_01_phi_huy_don.md",
+   "title": "Điều khoản 1: Chính sách phí hủy đơn đặt bàn",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…tiền cọc) do nhà hàng đã chuẩn bị nguyên liệu và giữ chỗ. 4. **Trường hợp bất khả kháng**: Nếu có xác nhận thiên tai, dịch bệnh hoặc cấp cứu y tế, khách hàng cung cấp chứng từ sẽ được xem xét hoàn 100% cọc trong vòng 3 ngày làm việc."
+  },
+  {
+   "id": "cs_02_hoan_tien_coc.md#main#0",
+   "file": "cs_02_hoan_tien_coc.md",
+   "title": "Điều khoản 2: Chính sách và thời gian hoàn tiền cọc",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Phương thức hoàn tiền**: Tiền cọc được hoàn trả về đúng phương thức thanh toán ban đầu (Ví MoMo, ZaloPay, Thẻ ATM nội địa, hoặc Thẻ tín dụng/ghi nợ Visa/Mastercard). 2. **Thời gian xử lý hoàn tiền**: - Ví điện tử (MoMo, ZaloPay, ShopeePay): Hoàn trong vòng 2 đến 4 giờ làm việc. - Thẻ ngân hàng nội địa (Napas): Hoàn trong vòng 24 đến 48 giờ làm việc (không tính Thứ Bảy, Chủ Nhật). - Thẻ tín dụng quốc tế: Hoàn trong vòng 3 đến 7 ngày làm việc tùy thuộc ngân hàng phát hành."
+  },
+  {
+   "id": "cs_02_hoan_tien_coc.md#main#1",
+   "file": "cs_02_hoan_tien_coc.md",
+   "title": "Điều khoản 2: Chính sách và thời gian hoàn tiền cọc",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…vòng 3 đến 7 ngày làm việc tùy thuộc ngân hàng phát hành. 3. **Trường hợp tiền cọc chưa về sau hạn quy định**: Khách hàng liên hệ tổng đài hoặc tạo phiếu khiếu nại có mã đơn, bộ phận tài chính sẽ tra soát mã giao dịch (trace code) trong vòng 24 giờ."
+  },
+  {
+   "id": "cs_03_den_tre.md#main#0",
+   "file": "cs_03_den_tre.md",
+   "title": "Điều khoản 3: Quy định khách đến trễ giờ đặt bàn",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Thời gian giữ bàn tối đa**: Nhà hàng cam kết giữ bàn tối đa 15 phút kể từ giờ khách đã đặt trên hệ thống. 2. **Đến trễ trong vòng 15 phút**: Bàn vẫn được giữ nguyên vẹn, không phát sinh bất kỳ khoản phí nào. 3. **Đến trễ quá 15 phút không báo trước**: Đơn đặt bàn sẽ tự động bị hủy trên hệ thống, khách mất 100% tiền cọc và bàn được chuyển cho khách vãng lai."
+  },
+  {
+   "id": "cs_03_den_tre.md#main#1",
+   "file": "cs_03_den_tre.md",
+   "title": "Điều khoản 3: Quy định khách đến trễ giờ đặt bàn",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…mất 100% tiền cọc và bàn được chuyển cho khách vãng lai. 4. **Có gọi điện hoặc thông báo trên app trước 15 phút**: Nhà hàng sẽ hỗ trợ giữ bàn tối đa 30 phút nếu quán còn chỗ, hoặc ưu tiên xếp bàn kế tiếp ngay khi khách tới."
+  },
+  {
+   "id": "cs_04_doi_gio_doi_ngay.md#main#0",
+   "file": "cs_04_doi_gio_doi_ngay.md",
+   "title": "Điều khoản 4: Quy định thay đổi thời gian hoặc ngày đặt bàn",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Thời hạn đổi giờ/ngày**: Khách hàng được quyền đổi giờ hoặc ngày đặt bàn miễn phí nếu thao tác trước giờ hẹn ít nhất 2 giờ. 2. **Số lần đổi tối đa**: Mỗi đơn đặt bàn chỉ được phép thay đổi thời gian tối đa 2 lần. 3. **Đổi giờ trong vòng 2 giờ trước giờ hẹn**: Tùy thuộc vào tình trạng bàn trống của quán tại thời điểm đó. Nếu quán hết chỗ và khách không thể đến đúng giờ cũ, đơn sẽ áp dụng theo chính sách hủy đơn."
+  },
+  {
+   "id": "cs_04_doi_gio_doi_ngay.md#main#1",
+   "file": "cs_04_doi_gio_doi_ngay.md",
+   "title": "Điều khoản 4: Quy định thay đổi thời gian hoặc ngày đặt bàn",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…đến đúng giờ cũ, đơn sẽ áp dụng theo chính sách hủy đơn. 4. **Chênh lệch giá món/tiền cọc**: Nếu đổi sang khung giờ cao điểm hoặc ngày lễ có quy định mức cọc cao hơn, khách hàng cần thanh toán phần cọc chênh lệch trước khi đơn đổi có hiệu lực."
+  },
+  {
+   "id": "cs_05_khuyen_mai_voucher.md#main#0",
+   "file": "cs_05_khuyen_mai_voucher.md",
+   "title": "Điều khoản 5: Quy định áp dụng mã giảm giá và khuyến mãi",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Số lượng voucher**: Mỗi đơn đặt bàn chỉ được áp dụng tối đa 01 mã giảm giá (voucher) từ ứng dụng, trừ khi chương trình có quy định gộp mã riêng. 2. **Điều kiện đơn tối thiểu**: Voucher chỉ có hiệu lực khi tổng hóa đơn thanh toán đạt mức tối thiểu ghi trên điều kiện voucher (ví dụ đơn từ 300.000 VNĐ). 3. **Áp dụng vào ngày Lễ, Tết**: Hầu hết các voucher giảm giá không áp dụng vào các ngày lễ Tết (30/4, 1/5, 2/9, Tết Dương Lịch và Tết Âm Lịch), trừ các voucher phát hành riêng cho dịp lễ."
+  },
+  {
+   "id": "cs_05_khuyen_mai_voucher.md#main#1",
+   "file": "cs_05_khuyen_mai_voucher.md",
+   "title": "Điều khoản 5: Quy định áp dụng mã giảm giá và khuyến mãi",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…Tết Âm Lịch), trừ các voucher phát hành riêng cho dịp lễ. 4. **Hủy đơn có áp dụng voucher**: Nếu đơn bị hủy hợp lệ theo chính sách hoàn cọc, mã voucher sẽ được hoàn lại vào ví voucher của tài khoản trong vòng 1 giờ."
+  },
+  {
+   "id": "cs_06_diem_thuong_thanh_vien.md#main#0",
+   "file": "cs_06_diem_thuong_thanh_vien.md",
+   "title": "Điều khoản 6: Chính sách tích lũy và đổi điểm thưởng thành viên",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Tỷ lệ tích điểm**: Mỗi 10.000 VNĐ thanh toán thành công qua ứng dụng, khách hàng được tích lũy 1 điểm thưởng (tương đương 100 VNĐ hoàn lại). 2. **Hạn mức quy đổi**: Điểm thưởng có thể quy đổi để trừ trực tiếp vào tiền cọc hoặc hóa đơn với mức tối thiểu 500 điểm (tương đương 50.000 VNĐ) và tối đa 50% giá trị đơn hàng."
+  },
+  {
+   "id": "cs_06_diem_thuong_thanh_vien.md#main#1",
+   "file": "cs_06_diem_thuong_thanh_vien.md",
+   "title": "Điều khoản 6: Chính sách tích lũy và đổi điểm thưởng thành viên",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…(tương đương 50.000 VNĐ) và tối đa 50% giá trị đơn hàng. 3. **Thời hạn sử dụng điểm**: Điểm thưởng có giá trị sử dụng trong vòng 12 tháng kể từ ngày tích lũy. Sau thời gian này điểm chưa dùng sẽ tự động hết hạn vào ngày cuối cùng của quý. 4. **Hoàn điểm khi hủy đơn**: Nếu khách hàng hủy đơn hợp lệ, số điểm đã dùng để thanh toán cọc sẽ được hoàn lại 100% trong vòng 2 giờ."
+  },
+  {
+   "id": "cs_07_phuong_thuc_thanh_toan.md#main#0",
+   "file": "cs_07_phuong_thuc_thanh_toan.md",
+   "title": "Điều khoản 7: Các phương thức thanh toán tiền cọc và hóa đơn",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Phương thức thanh toán cọc trên app**: Hỗ trợ Ví MoMo, Ví ZaloPay, Ví ShopeePay, Thẻ ATM Napas Internet Banking, Thẻ quốc tế Visa/Mastercard/JCB và chuyển khoản mã VietQR tự động. 2. **Thời gian chờ thanh toán cọc**: Sau khi bấm đặt bàn, khách hàng có 10 phút để hoàn tất thanh toán cọc. Quá 10 phút không thanh toán, hệ thống sẽ tự động hủy lệnh giữ bàn."
+  },
+  {
+   "id": "cs_07_phuong_thuc_thanh_toan.md#main#1",
+   "file": "cs_07_phuong_thuc_thanh_toan.md",
+   "title": "Điều khoản 7: Các phương thức thanh toán tiền cọc và hóa đơn",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…không thanh toán, hệ thống sẽ tự động hủy lệnh giữ bàn. 3. **Thanh toán phần còn lại tại quán**: Khách hàng có thể thanh toán phần tiền còn lại trực tiếp tại quán bằng tiền mặt, thẻ ngân hàng POS hoặc quét mã QR quán. 4. **Bảo mật thanh toán**: Toàn bộ giao dịch trực tuyến được mã hóa theo chuẩn PCI-DSS Level 1, cam kết không lưu trữ thông tin thẻ ngân hàng của người dùng."
+  },
+  {
+   "id": "cs_08_su_co_quan_khong_co_ban.md#main#0",
+   "file": "cs_08_su_co_quan_khong_co_ban.md",
+   "title": "Điều khoản 8: Chính sách đền bù khi quán không có bàn khi khách đến",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Cam kết dịch vụ**: Nếu khách hàng đến đúng giờ đã đặt (hoặc trễ dưới 15 phút) nhưng nhà hàng không bố trí được bàn trống trong vòng 15 phút chờ đợi: - Nhà hàng và ứng dụng sẽ hoàn trả 100% tiền cọc cho khách hàng trong vòng 3 ngày làm việc. - Tặng thêm voucher bồi thường trị giá 200.000 VNĐ áp dụng cho lần đặt bàn tiếp theo."
+  },
+  {
+   "id": "cs_08_su_co_quan_khong_co_ban.md#main#1",
+   "file": "cs_08_su_co_quan_khong_co_ban.md",
+   "title": "Điều khoản 8: Chính sách đền bù khi quán không có bàn khi khách đến",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…trị giá 200.000 VNĐ áp dụng cho lần đặt bàn tiếp theo. 2. **Hỗ trợ chuyển quán khẩn cấp**: Tổng đài viên sẽ hỗ trợ tìm và đặt bàn ưu tiên tại nhà hàng tương đương trong bán kính 3km, hỗ trợ chi phí di chuyển taxi tối đa 100.000 VNĐ (có hóa đơn dịch vụ gọi xe). 3. **Quy trình lập biên bản**: Khách hàng yêu cầu quản lý quán xác nhận sự cố hoặc chụp ảnh tại quán và gửi qua chatbot để tạo phiếu khiếu nại khẩn cấp mã KN-xxxx."
+  },
+  {
+   "id": "cs_09_tinh_sai_tien_hoa_don.md#main#0",
+   "file": "cs_09_tinh_sai_tien_hoa_don.md",
+   "title": "Điều khoản 9: Quy trình xử lý và bồi hoàn khi nhà hàng tính sai tiền",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Thời hạn phản ánh**: Khách hàng cần giữ hóa đơn bán lẻ/phiếu thanh toán và gửi phản ánh trong vòng 48 giờ kể từ thời điểm thanh toán tại quán. 2. **Các lỗi thường gặp**: Tính sai số lượng món, tính nhầm món khách không gọi, chưa trừ tiền cọc đã thanh toán trước, hoặc tính sai thuế phí VAT/phí phục vụ. 3. **Quy trình đối soát**: Bộ phận hỗ trợ sẽ làm việc với nhà hàng đối soát camera và hệ thống POS trong vòng 24 giờ làm việc."
+  },
+  {
+   "id": "cs_09_tinh_sai_tien_hoa_don.md#main#1",
+   "file": "cs_09_tinh_sai_tien_hoa_don.md",
+   "title": "Điều khoản 9: Quy trình xử lý và bồi hoàn khi nhà hàng tính sai tiền",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…đối soát camera và hệ thống POS trong vòng 24 giờ làm việc. 4. **Bồi hoàn tiền chênh lệch**: Nếu xác định nhà hàng tính thừa tiền của khách, số tiền chênh lệch sẽ được hoàn trả về tài khoản ngân hàng của khách trong vòng 3 ngày làm việc kèm lời xin lỗi chính thức từ quản lý nhà hàng."
+  },
+  {
+   "id": "cs_10_thai_do_phuc_vu_kem.md#main#0",
+   "file": "cs_10_thai_do_phuc_vu_kem.md",
+   "title": "Điều khoản 10: Chính sách tiếp nhận và xử lý khiếu nại chất lượng phục vụ",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Phạm vi khiếu nại**: Nhân viên có thái độ thiếu tôn trọng, to tiếng với khách, phục vụ món quá chậm trễ (trên 45 phút chưa ra món đầu tiên), hoặc phân biệt đối xử. 2. **Thời hạn xử lý**: Phiếu khiếu nại mã KN-xxxx về thái độ phục vụ sẽ được bộ phận Chăm sóc khách hàng tiếp nhận và xử lý trong vòng 24 đến 48 giờ làm việc. 3. **Hình thức giải quyết**: - Quản lý nhà hàng trực tiếp gọi điện xin lỗi khách hàng."
+  },
+  {
+   "id": "cs_10_thai_do_phuc_vu_kem.md#main#1",
+   "file": "cs_10_thai_do_phuc_vu_kem.md",
+   "title": "Điều khoản 10: Chính sách tiếp nhận và xử lý khiếu nại chất lượng phục vụ",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…- Quản lý nhà hàng trực tiếp gọi điện xin lỗi khách hàng. - Tặng voucher trải nghiệm giảm giá từ 10% đến 30% cho lần dùng bữa tiếp theo tùy mức độ vi phạm. - Nhà hàng có hình thức kỷ luật nội bộ với nhân viên vi phạm theo quy định đối tác."
+  },
+  {
+   "id": "cs_11_phong_rieng_vip.md#main#0",
+   "file": "cs_11_phong_rieng_vip.md",
+   "title": "Điều khoản 11: Quy định đặt và phụ thu phòng riêng (phòng VIP)",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Điều kiện đặt phòng riêng**: Yêu cầu số lượng khách tối thiểu từ 6 đến 10 người tùy sức chứa của phòng tại từng nhà hàng. 2. **Mức phụ thu phòng riêng**: - Khung giờ thường: Miễn phí phụ thu hoặc phụ thu 100.000 VNĐ - 200.000 VNĐ/giờ tùy quán. - Khung giờ cao điểm (tối thứ 6, thứ 7, CN, ngày lễ): Phụ thu 200.000 VNĐ - 500.000 VNĐ/buổi hoặc yêu cầu hóa đơn tối thiểu (min-spend) từ 2.000.000 VNĐ."
+  },
+  {
+   "id": "cs_11_phong_rieng_vip.md#main#1",
+   "file": "cs_11_phong_rieng_vip.md",
+   "title": "Điều khoản 11: Quy định đặt và phụ thu phòng riêng (phòng VIP)",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…yêu cầu hóa đơn tối thiểu (min-spend) từ 2.000.000 VNĐ. 3. **Thời gian sử dụng**: Tiêu chuẩn thời gian sử dụng phòng riêng là 2.5 giờ/lượt đặt. Sử dụng thêm giờ vui lòng báo trước với quản lý quán. 4. **Hủy phòng riêng**: Hủy phòng riêng cần báo trước tối thiểu 4 giờ để được hoàn 100% tiền cọc."
+  },
+  {
+   "id": "cs_12_mang_do_an_thuc_uong.md#main#0",
+   "file": "cs_12_mang_do_an_thuc_uong.md",
+   "title": "Điều khoản 12: Quy định phụ thu mang đồ ăn, rượu bia từ ngoài vào",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Quy định chung**: Phần lớn các quán cho phép khách mang bánh kem sinh nhật từ ngoài vào hoàn toàn miễn phí. 2. **Rượu vang và rượu mạnh mang vào**: - Rượu vang: Phụ thu phí phục vụ ly từ 100.000 VNĐ đến 200.000 VNĐ/chai 750ml. - Rượu mạnh (Whisky, Cognac...): Phụ thu phí mở chai từ 250.000 VNĐ đến 500.000 VNĐ/chai. 3. **Bia và nước ngọt từ ngoài vào**: Đa số nhà hàng không khuyến khích và có thể phụ thu từ 10.000 VNĐ đến 20.000 VNĐ/lon hoặc từ chối phục vụ."
+  },
+  {
+   "id": "cs_12_mang_do_an_thuc_uong.md#main#1",
+   "file": "cs_12_mang_do_an_thuc_uong.md",
+   "title": "Điều khoản 12: Quy định phụ thu mang đồ ăn, rượu bia từ ngoài vào",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…thu từ 10.000 VNĐ đến 20.000 VNĐ/lon hoặc từ chối phục vụ. 4. **Đồ ăn nấu sẵn ngoài**: Nghiêm cấm mang đồ ăn mặn, hải sản tươi sống từ ngoài vào nhằm đảm bảo an toàn vệ sinh thực phẩm."
+  },
+  {
+   "id": "cs_13_ban_dong_nguoi_doan_lon.md#main#0",
+   "file": "cs_13_ban_dong_nguoi_doan_lon.md",
+   "title": "Điều khoản 13: Quy định đặt bàn đoàn đông (trên 10 người)",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Yêu cầu tiền cọc**: Đơn đặt bàn từ 10 người trở lên bắt buộc đặt cọc tối thiểu 20% đến 30% giá trị dự kiến hoặc 50.000 VNĐ/người. 2. **Đặt món trước**: Khuyến khích đặt set menu hoặc chọn món chính trước giờ tiệc ít nhất 4 giờ để nhà hàng chuẩn bị nguyên liệu chu đáo và ra món đúng giờ. 3. **Thời gian báo hủy bàn đoàn**: Khách hàng cần báo hủy trước ít nhất 12 giờ để nhận lại 100% tiền cọc. Báo hủy từ 4 đến 12 giờ hoàn 50% cọc; dưới 4 giờ không hoàn cọc."
+  },
+  {
+   "id": "cs_13_ban_dong_nguoi_doan_lon.md#main#1",
+   "file": "cs_13_ban_dong_nguoi_doan_lon.md",
+   "title": "Điều khoản 13: Quy định đặt bàn đoàn đông (trên 10 người)",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…từ 4 đến 12 giờ hoàn 50% cọc; dưới 4 giờ không hoàn cọc. 4. **Ưu đãi đoàn đông**: Các đoàn từ 15 người trở lên thường được tặng gói trang trí cơ bản hoặc giảm 5% - 10% trên tổng bill món ăn."
+  },
+  {
+   "id": "cs_14_thay_doi_so_luong_nguoi.md#main#0",
+   "file": "cs_14_thay_doi_so_luong_nguoi.md",
+   "title": "Điều khoản 14: Quy định tăng hoặc giảm số lượng người ăn",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Tăng số lượng người**: Khách hàng cần thông báo trên app hoặc gọi quán trước ít nhất 1 giờ. Quán sẽ sắp xếp thêm ghế hoặc ghép bàn nếu còn không gian trống. 2. **Giảm số lượng người**: Khách có thể giảm tối đa 20% số lượng khách mà không bị phạt cọc. Nếu giảm quá 50% số khách đã đăng ký sát giờ (dưới 1 giờ), quán có quyền tính phí giữ chỗ theo số lượng cũ."
+  },
+  {
+   "id": "cs_14_thay_doi_so_luong_nguoi.md#main#1",
+   "file": "cs_14_thay_doi_so_luong_nguoi.md",
+   "title": "Điều khoản 14: Quy định tăng hoặc giảm số lượng người ăn",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…1 giờ), quán có quyền tính phí giữ chỗ theo số lượng cũ. 3. **Đổi vị trí bàn do thay đổi số khách**: Nếu thay đổi số lượng người dẫn đến bàn ban đầu không còn phù hợp, quán sẽ chủ động bố trí bàn có diện tích thích hợp nhất."
+  },
+  {
+   "id": "cs_15_trang_tri_sinh_nhat_su_kien.md#main#0",
+   "file": "cs_15_trang_tri_sinh_nhat_su_kien.md",
+   "title": "Điều khoản 15: Dịch vụ trang trí sinh nhật, tiệc kỷ niệm tại quán",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Gói trang trí cơ bản**: Bao gồm bóng bay chữ Happy Birthday, nến để bàn và bảng chào tên khách hàng (chi phí từ 200.000 VNĐ đến 400.000 VNĐ hoặc miễn phí với bill trên 2.000.000 VNĐ). 2. **Gói trang trí theo chủ đề (concept riêng)**: Khách hàng cần đặt trước ít nhất 24 giờ để bên decor chuẩn bị phụ kiện và setup trước giờ tiệc 1 tiếng."
+  },
+  {
+   "id": "cs_15_trang_tri_sinh_nhat_su_kien.md#main#1",
+   "file": "cs_15_trang_tri_sinh_nhat_su_kien.md",
+   "title": "Điều khoản 15: Dịch vụ trang trí sinh nhật, tiệc kỷ niệm tại quán",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…decor chuẩn bị phụ kiện và setup trước giờ tiệc 1 tiếng. 3. **Tự mang phụ kiện vào decor**: Khách hàng được phép tự trang trí trước giờ hẹn 30 phút, miễn không khoan đục tường, dán băng keo làm bong tróc sơn hoặc dùng kim tuyến khó dọn. 4. **Hỗ trợ bảo quản bánh kem**: Nhà hàng hỗ trợ cất giữ bánh kem trong tủ mát miễn phí cho đến lúc khai tiệc."
+  },
+  {
+   "id": "cs_16_tre_em_ghe_tre_em.md#main#0",
+   "file": "cs_16_tre_em_ghe_tre_em.md",
+   "title": "Điều khoản 16: Chính sách trẻ em và ghế ăn cho trẻ nhỏ",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Ghế ăn trẻ em (Baby high chair)**: 100% các quán đạt chuẩn gia đình trên app đều cung cấp ghế ăn dặm cho trẻ miễn phí (khách nên ghi chú số lượng ghế khi đặt bàn). 2. **Chính sách giá vé buffet cho trẻ em** (nếu ăn buffet): - Trẻ em cao dưới 1m: Hoàn toàn miễn phí. - Trẻ em cao từ 1m đến 1m3: Tính 50% giá vé người lớn. - Trẻ em cao trên 1m3: Tính giá như vé người lớn."
+  },
+  {
+   "id": "cs_16_tre_em_ghe_tre_em.md#main#1",
+   "file": "cs_16_tre_em_ghe_tre_em.md",
+   "title": "Điều khoản 16: Chính sách trẻ em và ghế ăn cho trẻ nhỏ",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…lớn. - Trẻ em cao trên 1m3: Tính giá như vé người lớn. 3. **Khu vui chơi trẻ em**: Một số nhà hàng có khu vui chơi riêng miễn phí cho bé, có camera giám sát và nhân viên trông coi trong khung giờ 18h - 21h."
+  },
+  {
+   "id": "cs_17_gui_xe_may_o_to.md#main#0",
+   "file": "cs_17_gui_xe_may_o_to.md",
+   "title": "Điều khoản 17: Quy định về bãi đỗ xe và chi phí giữ xe",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Xe máy**: 95% các nhà hàng có chỗ đỗ xe máy miễn phí ngay tại quán có nhân viên bảo vệ phát vé xe. Trường hợp gửi bãi ngoài, quán hỗ trợ thanh toán phí gửi xe (tối đa 10.000 VNĐ/xe). 2. **Xe ô tô**: - Quán có chỗ đỗ ô tô trước cửa hoặc bãi riêng: Miễn phí đỗ xe cho khách dùng bữa."
+  },
+  {
+   "id": "cs_17_gui_xe_may_o_to.md#main#1",
+   "file": "cs_17_gui_xe_may_o_to.md",
+   "title": "Điều khoản 17: Quy định về bãi đỗ xe và chi phí giữ xe",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…cửa hoặc bãi riêng: Miễn phí đỗ xe cho khách dùng bữa. - Quán không có bãi riêng: Nhân viên hướng dẫn khách ra bãi đỗ xe công cộng gần nhất (bán kính 100 - 300m), mức phí gửi ô tô từ 30.000 VNĐ đến 50.000 VNĐ/lượt (khách tự chi trả hoặc quán hỗ trợ theo quy định riêng của từng quán). 3. **An toàn tài sản**: Khách hàng vui lòng tự bảo quản tài sản có giá trị để trong xe, nhà hàng chỉ chịu trách nhiệm đối với phương tiện có vé giữ xe hợp lệ."
+  },
+  {
+   "id": "cs_18_thoi_gian_giu_ban.md#main#0",
+   "file": "cs_18_thoi_gian_giu_ban.md",
+   "title": "Điều khoản 18: Thời gian nhà hàng tối đa giữ bàn chờ khách",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Thời gian quy chuẩn**: Thời gian giữ bàn tiêu chuẩn là 15 phút tính từ giờ khách hẹn trên đơn đặt bàn thành công. 2. **Gia hạn thời gian giữ bàn**: Khách hàng có thể bấm nút 'Xin đến trễ' trên ứng dụng hoặc gọi trực tiếp nhà hàng để xin gia hạn thêm tối đa 15 phút (tổng cộng 30 phút). 3. **Hủy sau khi hết giờ gia hạn**: Nếu sau 30 phút khách vẫn chưa có mặt và không thể liên lạc qua số điện thoại, hệ thống sẽ tự động hủy đơn và ghi nhận khách vắng mặt (No-Show)."
+  },
+  {
+   "id": "cs_18_thoi_gian_giu_ban.md#main#1",
+   "file": "cs_18_thoi_gian_giu_ban.md",
+   "title": "Điều khoản 18: Thời gian nhà hàng tối đa giữ bàn chờ khách",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…sẽ tự động hủy đơn và ghi nhận khách vắng mặt (No-Show). 4. **Bàn tiệc đoàn đông**: Đoàn từ 15 người trở lên được linh động giữ bàn tối đa 30 phút theo thỏa thuận với nhà hàng."
+  },
+  {
+   "id": "cs_19_hoa_don_vat_doanh_nghiep.md#main#0",
+   "file": "cs_19_hoa_don_vat_doanh_nghiep.md",
+   "title": "Điều khoản 19: Quy định xuất hóa đơn VAT điện tử cho doanh nghiệp",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Thời hạn yêu cầu xuất hóa đơn**: Khách hàng cần cung cấp thông tin xuất hóa đơn đỏ (Tên công ty, Mã số thuế, Địa chỉ, Email nhận hóa đơn) ngay khi thanh toán tại quán hoặc trong vòng 24 giờ cùng ngày dùng bữa. 2. **Hình thức hóa đơn**: Hóa đơn điện tử (e-Invoice) có mã của cơ quan Thuế sẽ được gửi tự động qua email khách hàng đăng ký trong vòng 48 giờ làm việc."
+  },
+  {
+   "id": "cs_19_hoa_don_vat_doanh_nghiep.md#main#1",
+   "file": "cs_19_hoa_don_vat_doanh_nghiep.md",
+   "title": "Điều khoản 19: Quy định xuất hóa đơn VAT điện tử cho doanh nghiệp",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…qua email khách hàng đăng ký trong vòng 48 giờ làm việc. 3. **Chi phí thuế**: Giá hiển thị trên app của một số quán chưa bao gồm 8% hoặc 10% VAT. Khách hàng xuất hóa đơn cần thanh toán thêm phần thuế VAT theo quy định pháp luật. 4. **Điều chỉnh thông tin sai**: Nếu phát hiện sai sót MST hoặc tên công ty, khách hàng gửi mã đơn và thông tin sửa đổi trong vòng 7 ngày để kế toán hủy và lập hóa đơn điều chỉnh."
+  },
+  {
+   "id": "cs_20_an_toan_ve_sinh_di_ung.md#main#0",
+   "file": "cs_20_an_toan_ve_sinh_di_ung.md",
+   "title": "Điều khoản 20: Cam kết an toàn thực phẩm và hỗ trợ món ăn dị ứng",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "1. **Chứng nhận an toàn thực phẩm**: Tất cả các nhà hàng đối tác trên hệ thống đều có Giấy chứng nhận cơ sở đủ điều kiện An toàn thực phẩm do cơ quan có thẩm quyền cấp. 2. **Ghi chú dị ứng nguyên**: Khách hàng bị dị ứng (hải sản, đậu phộng, gluten, sữa...) cần ghi chú rõ trong đơn đặt bàn. Nhà hàng sẽ xác nhận và chế biến riêng để tránh lây nhiễm chéo. 3. **Xử lý sự cố ngộ độc thực phẩm**: Trong trường hợp nghi ngờ ngộ độc thực phẩm sau bữa ăn:"
+  },
+  {
+   "id": "cs_20_an_toan_ve_sinh_di_ung.md#main#1",
+   "file": "cs_20_an_toan_ve_sinh_di_ung.md",
+   "title": "Điều khoản 20: Cam kết an toàn thực phẩm và hỗ trợ món ăn dị ứng",
+   "section": "",
+   "restaurant_id": "ALL",
+   "content": "…Trong trường hợp nghi ngờ ngộ độc thực phẩm sau bữa ăn: - Khách hàng cung cấp hồ sơ y tế/bệnh án từ cơ sở y tế trong vòng 24 giờ. - Ứng dụng phối hợp với nhà hàng chi trả 100% chi phí khám chữa bệnh thực tế và hoàn trả 100% giá trị bữa ăn. - Tạm dừng hiển thị nhà hàng trên ứng dụng để thanh kiểm tra chất lượng."
+  },
+  {
+   "id": "cs_21_quy_trinh_dat_ban.md#Các bước đặt bàn#0",
+   "file": "cs_21_quy_trinh_dat_ban.md",
+   "title": "Điều khoản 21: Quy trình đặt bàn và xác nhận đặt bàn",
+   "section": "Các bước đặt bàn",
+   "restaurant_id": "ALL",
+   "content": "1. **Chọn nhà hàng và khung giờ**: Khách chọn nhà hàng, ngày, giờ và số lượng khách. Hệ thống chỉ nhận đặt các khung giờ trưa (11:00 - 13:30) và tối (17:00 - 21:00), cách nhau 30 phút. 2. **Kiểm tra bàn trống**: Hệ thống tự kiểm tra bàn phù hợp với số khách (bàn 2, 4, 6 hoặc 10 chỗ). Nhóm trên 10 người áp dụng quy định đặt bàn đoàn đông. 3. **Xác nhận**: Trợ lý hiển thị tóm tắt đơn và chỉ ghi nhận khi khách xác nhận đồng ý. Mã đặt bàn dạng DBxxx chỉ được cấp sau khi hệ thống lưu đơn thành công."
+  },
+  {
+   "id": "cs_21_quy_trinh_dat_ban.md#Thời hạn đặt bàn#0",
+   "file": "cs_21_quy_trinh_dat_ban.md",
+   "title": "Điều khoản 21: Quy trình đặt bàn và xác nhận đặt bàn",
+   "section": "Thời hạn đặt bàn",
+   "restaurant_id": "ALL",
+   "content": "- Có thể đặt trước tối đa 14 ngày và tối thiểu trước giờ đến 30 phút. - Đơn đặt bàn không cần đặt cọc với nhóm dưới 6 người. Nhóm từ 6 người trở lên có thể được nhà hàng yêu cầu đặt cọc theo điều khoản tiền cọc."
+  },
+  {
+   "id": "cs_21_quy_trinh_dat_ban.md#Khi nhận bàn#0",
+   "file": "cs_21_quy_trinh_dat_ban.md",
+   "title": "Điều khoản 21: Quy trình đặt bàn và xác nhận đặt bàn",
+   "section": "Khi nhận bàn",
+   "restaurant_id": "ALL",
+   "content": "- Khách đọc mã đặt bàn DBxxx cho nhân viên lễ tân. Bàn được giữ tối đa 15 phút kể từ giờ đặt."
+  },
+  {
+   "id": "cs_22_huong_dan_su_dung_app.md#Tài khoản và đăng nhập#0",
+   "file": "cs_22_huong_dan_su_dung_app.md",
+   "title": "Điều khoản 22: Hướng dẫn sử dụng ứng dụng đặt bàn",
+   "section": "Tài khoản và đăng nhập",
+   "restaurant_id": "ALL",
+   "content": "1. **Đăng ký**: Khách đăng ký bằng số điện thoại, nhận mã OTP qua tin nhắn SMS trong vòng 60 giây. 2. **Quên mật khẩu**: Chọn \"Quên mật khẩu\" tại màn hình đăng nhập, nhập số điện thoại để nhận OTP đặt lại mật khẩu."
+  },
+  {
+   "id": "cs_22_huong_dan_su_dung_app.md#Xem và quản lý đơn đặt bàn#0",
+   "file": "cs_22_huong_dan_su_dung_app.md",
+   "title": "Điều khoản 22: Hướng dẫn sử dụng ứng dụng đặt bàn",
+   "section": "Xem và quản lý đơn đặt bàn",
+   "restaurant_id": "ALL",
+   "content": "- Vào mục \"Đơn của tôi\" để xem các đơn đặt bàn, trạng thái (Đã xác nhận, Chờ xác nhận, Đã hủy) và mã DBxxx. - Có thể đổi giờ, đổi số người hoặc hủy đơn ngay trong chi tiết đơn, hoặc nhắn trợ lý kèm mã đặt bàn."
+  },
+  {
+   "id": "cs_22_huong_dan_su_dung_app.md#Thông báo#0",
+   "file": "cs_22_huong_dan_su_dung_app.md",
+   "title": "Điều khoản 22: Hướng dẫn sử dụng ứng dụng đặt bàn",
+   "section": "Thông báo",
+   "restaurant_id": "ALL",
+   "content": "- Ứng dụng gửi thông báo xác nhận ngay khi đặt thành công và nhắc lịch trước giờ đến 2 tiếng. - Nếu tắt quyền thông báo trên điện thoại, khách sẽ không nhận được lời nhắc. Vào Cài đặt điện thoại để bật lại quyền thông báo cho ứng dụng."
+  },
+  {
+   "id": "cs_23_loi_ung_dung_thuong_gap.md#Không nhận được mã OTP hoặc tin nhắn xác nhận#0",
+   "file": "cs_23_loi_ung_dung_thuong_gap.md",
+   "title": "Điều khoản 23: Xử lý các lỗi ứng dụng thường gặp",
+   "section": "Không nhận được mã OTP hoặc tin nhắn xác nhận",
+   "restaurant_id": "ALL",
+   "content": "1. Kiểm tra số điện thoại đã nhập đúng và điện thoại còn sóng. 2. Chờ 60 giây rồi bấm \"Gửi lại mã\". Mỗi số điện thoại được gửi lại tối đa 5 lần mỗi giờ. 3. Kiểm tra hộp thư rác hoặc ứng dụng chặn tin nhắn quảng cáo. Nếu vẫn không nhận được, khách có thể tạo phiếu hỗ trợ để nhân viên kiểm tra."
+  },
+  {
+   "id": "cs_23_loi_ung_dung_thuong_gap.md#Ứng dụng bị treo, không mở được hoặc báo lỗi khi đặt bàn#0",
+   "file": "cs_23_loi_ung_dung_thuong_gap.md",
+   "title": "Điều khoản 23: Xử lý các lỗi ứng dụng thường gặp",
+   "section": "Ứng dụng bị treo, không mở được hoặc báo lỗi khi đặt bàn",
+   "restaurant_id": "ALL",
+   "content": "1. Cập nhật ứng dụng lên phiên bản mới nhất, sau đó tắt hẳn và mở lại. 2. Kiểm tra kết nối mạng; thử chuyển giữa Wi-Fi và dữ liệu di động. 3. Nếu lỗi xuất hiện khi bấm đặt bàn, đơn có thể CHƯA được tạo. Khách kiểm tra mục \"Đơn của tôi\" trước khi đặt lại để tránh đặt trùng."
+  },
+  {
+   "id": "cs_23_loi_ung_dung_thuong_gap.md#Lỗi thanh toán tiền cọc#0",
+   "file": "cs_23_loi_ung_dung_thuong_gap.md",
+   "title": "Điều khoản 23: Xử lý các lỗi ứng dụng thường gặp",
+   "section": "Lỗi thanh toán tiền cọc",
+   "restaurant_id": "ALL",
+   "content": "- Nếu tài khoản đã bị trừ tiền nhưng đơn chưa xác nhận, hệ thống tự hoàn tiền trong 3 - 5 ngày làm việc. Khách nên tạo phiếu hỗ trợ kèm thời gian giao dịch để được kiểm tra nhanh hơn."
+  },
+  {
+   "id": "cs_24_phu_thu_le_tet.md#Phụ thu ngày lễ, Tết#0",
+   "file": "cs_24_phu_thu_le_tet.md",
+   "title": "Điều khoản 24: Phụ thu ngày lễ, Tết và các khoản phí dịch vụ",
+   "section": "Phụ thu ngày lễ, Tết",
+   "restaurant_id": "ALL",
+   "content": "1. **Ngày lễ lớn** (30/4, 1/5, 2/9, Giỗ Tổ Hùng Vương, Tết Dương lịch): nhà hàng có thể áp dụng phụ thu 10% trên tổng hóa đơn. Mức phụ thu được thông báo trên ứng dụng và tại quán trước khi khách đặt bàn. 2. **Tết Nguyên đán** (từ 28 tháng Chạp đến mùng 6 Tết): phụ thu tối đa 20% trên tổng hóa đơn, kèm thực đơn Tết riêng. 3. Ngày thường và cuối tuần thông thường **không áp dụng phụ thu**."
+  },
+  {
+   "id": "cs_24_phu_thu_le_tet.md#Phí dịch vụ và thuế#0",
+   "file": "cs_24_phu_thu_le_tet.md",
+   "title": "Điều khoản 24: Phụ thu ngày lễ, Tết và các khoản phí dịch vụ",
+   "section": "Phí dịch vụ và thuế",
+   "restaurant_id": "ALL",
+   "content": "- Giá trên thực đơn đã bao gồm thuế VAT trừ khi có ghi chú khác. Một số nhà hàng thu thêm phí phục vụ 5%, được ghi rõ trên hóa đơn. - Nếu khách bị tính phụ thu không đúng quy định (ví dụ ngày thường mà vẫn tính phụ thu lễ), khách có thể yêu cầu tạo phiếu khiếu nại để được hoàn lại phần chênh lệch trong vòng 3 ngày làm việc."
+  },
+  {
+   "id": "chinh_sach.csv#CS001",
+   "file": "chinh_sach.csv",
+   "title": "Quy định riêng của nhà hàng NH001",
+   "section": "den_tre",
+   "restaurant_id": "NH001",
+   "content": "Khách nên báo trước nếu đến trễ. Thời gian giữ bàn mẫu là 15 phút; cần xác nhận lại với nhà hàng khi trễ hơn."
+  },
+  {
+   "id": "chinh_sach.csv#CS002",
+   "file": "chinh_sach.csv",
+   "title": "Quy định riêng của nhà hàng NH001",
+   "section": "huy_dat_ban",
+   "restaurant_id": "NH001",
+   "content": "Yêu cầu hủy nên được gửi trước giờ đặt. Nếu có đặt cọc, cần kiểm tra điều kiện đặt cọc cụ thể."
+  },
+  {
+   "id": "chinh_sach.csv#CS003",
+   "file": "chinh_sach.csv",
+   "title": "Quy định riêng của nhà hàng NH002",
+   "section": "doi_so_nguoi",
+   "restaurant_id": "NH002",
+   "content": "Có thể yêu cầu thay đổi số người; nhà hàng cần xác nhận sức chứa trước khi cập nhật."
+  },
+  {
+   "id": "chinh_sach.csv#CS004",
+   "file": "chinh_sach.csv",
+   "title": "Quy định riêng của nhà hàng NH003",
+   "section": "di_ung_thuc_pham",
+   "restaurant_id": "NH003",
+   "content": "Khách cần thông báo dị ứng trước khi gọi món. Chatbot không được cam kết món hoàn toàn không có chất gây dị ứng nếu chưa có xác nhận."
+  },
+  {
+   "id": "chinh_sach.csv#CS005",
+   "file": "chinh_sach.csv",
+   "title": "Quy định riêng của nhà hàng NH004",
+   "section": "den_tre",
+   "restaurant_id": "NH004",
+   "content": "Khách nên liên hệ nhà hàng khi dự kiến đến trễ. Việc giữ bàn phụ thuộc tình trạng phục vụ thực tế."
+  },
+  {
+   "id": "chinh_sach.csv#CS006",
+   "file": "chinh_sach.csv",
+   "title": "Quy định riêng của nhà hàng NH005",
+   "section": "an_chay",
+   "restaurant_id": "NH005",
+   "content": "Có menu món chay. Khách nên báo trước về yêu cầu ăn thuần chay hoặc dị ứng."
+  },
+  {
+   "id": "chinh_sach.csv#CS007",
+   "file": "chinh_sach.csv",
+   "title": "Quy định riêng của nhà hàng NH007",
+   "section": "dat_nhom",
+   "restaurant_id": "NH007",
+   "content": "Nhóm đông nên gửi yêu cầu trước để nhà hàng xác nhận sức chứa và cách sắp xếp bàn."
+  },
+  {
+   "id": "chinh_sach.csv#CS008",
+   "file": "chinh_sach.csv",
+   "title": "Quy định riêng của nhà hàng NH008",
+   "section": "huy_dat_ban",
+   "restaurant_id": "NH008",
+   "content": "Với đặt chỗ nhóm, khách nên xác nhận chính sách hủy trực tiếp với nhà hàng."
+  }
+ ]
+}

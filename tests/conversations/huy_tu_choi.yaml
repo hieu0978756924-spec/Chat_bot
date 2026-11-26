@@ -1,0 +1,19 @@
+name: huy_don_tu_choi_roi_dong_y
+turns:
+  - user: "Mình muốn hủy đơn DB003"
+    expect:
+      intents_any: [cancel_reservation]
+      blocks_all: [confirm]
+      reply_contains: ["DB003"]
+  - user: "thôi khoan đã"
+    expect:
+      blocks_all: [pending_cancelled]
+      reply_not_contains: ["Đã hủy đơn"]
+  - user: "hủy DB003 giúp mình"
+    expect:
+      blocks_all: [confirm]
+  - user: "đồng ý"
+    expect:
+      tools:
+        - {tool: cancel_reservation, params: {booking_code: "DB003"}}
+      reply_contains: ["Đã hủy đơn DB003"]

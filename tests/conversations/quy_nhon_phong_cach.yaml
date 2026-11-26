@@ -1,0 +1,18 @@
+# Dataset nhà hàng Quy Nhơn (giá / giờ mở cửa ước tính) + tìm theo phong cách ẩm thực
+name: quy_nhon_phong_cach
+turns:
+  - user: "tìm nhà hàng món Âu ở Quy Nhơn"
+    expect:
+      slots: {cuisine: "Âu", area: "Quy Nhơn"}
+      reply_contains: ["TRE Restaurant", "Sisters Tavern & Pizzeria", "(ước tính)"]
+      reply_not_contains: ["chưa xác minh", "Mình có thể:"]
+  - user: "TRE Restaurant còn bàn tối mai 4 người không"
+    expect:
+      slots: {restaurant_id: "QN020", party_size: 4, date: "{tomorrow}"}
+      tools:
+        - {tool: check_table_availability, params: {restaurant_id: "QN020", party_size: 4}}
+      tools_not: [create_reservation]
+      availability_matches_tools: true
+  - user: "muốn ăn bún cá"
+    expect:
+      reply_contains: ["Bún cá Ngọc Liên"]

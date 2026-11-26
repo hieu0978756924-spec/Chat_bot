@@ -1,0 +1,18 @@
+name: dat_ban_co_xac_nhan
+turns:
+  - user: "Tìm quán nướng ở Tân Bình cho 2 người lúc 18 giờ ngày mai"
+    expect:
+      slots: {cuisine: "Nướng", area: "Tân Bình", party_size: 2, time: "18:00", date: "{tomorrow}"}
+      tools:
+        - {tool: search_restaurants, params: {cuisine: "Nướng", area: "Tân Bình"}}
+      availability_matches_tools: true
+  - user: "đặt quán đầu tiên giúp mình"
+    expect:
+      slots: {restaurant_id: "NH004"}
+      blocks_all: [confirm]
+      reply_not_contains: ["Đặt bàn thành công"]
+  - user: "ok xác nhận"
+    expect:
+      tools:
+        - {tool: create_reservation, params: {restaurant_id: "NH004", party_size: 2, time: "18:00"}}
+      reply_contains: ["Đặt bàn thành công", "DB"]

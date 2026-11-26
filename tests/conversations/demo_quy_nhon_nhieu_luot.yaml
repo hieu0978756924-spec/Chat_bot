@@ -1,0 +1,32 @@
+name: demo_quy_nhon_nhieu_luot
+turns:
+  - user: "Tìm nhà hàng lẩu ở Quy Nhơn."
+    expect:
+      slots: {cuisine: "Lẩu", area: "Quy Nhơn"}
+      tools:
+        - {tool: search_restaurants, params: {cuisine: "Lẩu", area: "Quy Nhơn"}}
+      reply_contains: ["Lẩu Biển Quy Nhơn", "Lẩu Bò Phố Biển"]
+  - user: "Dưới 250 nghìn nhé."
+    expect:
+      slots: {cuisine: "Lẩu", area: "Quy Nhơn", budget_max: 250000}
+      reply_contains: ["Lẩu Biển Quy Nhơn"]
+      reply_not_contains: ["Lẩu Bò Phố Biển"]
+  - user: "Có món chay không?"
+    expect:
+      slots: {cuisine: "Lẩu", area: "Quy Nhơn", budget_max: 250000}
+      reply_contains: ["chay"]
+      tools_not: [create_support_ticket]
+  - user: "Vậy đặt cho mình 4 người lúc 19h ngày mai."
+    expect:
+      slots: {party_size: 4, time: "19:00", date: "{tomorrow}"}
+      tools:
+        - {tool: check_table_availability, params: {restaurant_id: "NH009", party_size: 4, time: "19:00"}}
+      tools_not: [create_reservation]
+  - user: "Nếu còn bàn thì đặt luôn nhé."
+    expect:
+      blocks_any: [confirm, action_done]
+  - user: "đồng ý"
+    expect:
+      tools:
+        - {tool: create_reservation, params: {restaurant_id: "NH009", party_size: 4, time: "19:00"}}
+      reply_contains: ["Đặt bàn thành công"]

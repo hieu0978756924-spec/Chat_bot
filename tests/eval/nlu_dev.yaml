@@ -1,0 +1,209 @@
+# TẬP DEV: 17 nhóm x >= 8 cách diễn đạt (có dấu, không dấu, sai chính tả, câu ngắn, câu dài).
+# Được phép dùng để soát lỗi. KHÔNG chép câu nào ở đây vào prompt/few-shot/intent_examples.yaml.
+# Mỗi ca: text, intents (chấp nhận 1 trong các intent liệt kê, so với intent CHÍNH của NLU),
+#         slots (giá trị phải có trong state sau merge), removed (slot phải bị xóa),
+#         clarify: true (phải hỏi lại), confirmation (yes/no), blocks_any (block phản hồi mong đợi).
+
+tim_quan:
+  context: none
+  cases:
+    - {text: "Tìm giúp mình quán lẩu ngon với", intents: [search_restaurant], slots: {cuisine: "Lẩu"}}
+    - {text: "co quan sushi nao o quan 1 ko", intents: [search_restaurant], slots: {cuisine: "Nhật Bản", area: "Quận 1"}}
+    - {text: "quán nướng", intents: [search_restaurant], slots: {cuisine: "Nướng"}}
+    - {text: "Nhà mình 3 thế hệ muốn đi ăn hải sản cuối tuần này, bạn gợi ý chỗ nào ổn với", intents: [search_restaurant], slots: {cuisine: "Hải sản"}}
+    - {text: "kím quán pizza ngon ngon", intents: [search_restaurant], slots: {cuisine: "Pizza"}}
+    - {text: "ở Phú Nhuận có gì ăn không em", intents: [search_restaurant], slots: {area: "Phú Nhuận"}}
+    - {text: "tim nha hang chay quan 1", intents: [search_restaurant], slots: {cuisine: "Chay", area: "Quận 1"}}
+    - {text: "Gợi ý vài quán cà phê ngồi nói chuyện được ở quận 5", intents: [search_restaurant], slots: {cuisine: "Cà phê", area: "Quận 5"}}
+
+thuc_don:
+  context: none
+  cases:
+    - {text: "Có những món chay nào vậy?", intents: [search_menu]}
+    - {text: "mon nao duoi 100k", intents: [search_menu], slots: {budget_max: 100000}}
+    - {text: "Cho em xin menu với giá các món", intents: [search_menu]}
+    - {text: "giá món lẩu thái bao nhiu", intents: [search_menu]}
+    - {text: "thực đơn", intents: [search_menu]}
+    - {text: "Mẹ mình ăn chay trường, quán có món nào hợp với mẹ không, giá tầm dưới 80 nghìn thôi", intents: [search_menu], slots: {budget_max: 80000}}
+    - {text: "co mon gi re re khong", intents: [search_menu]}
+    - {text: "món tráng miệng có gì", intents: [search_menu]}
+
+nhieu_dieu_kien:
+  context: none
+  cases:
+    - {text: "Tìm quán lẩu ở Quận 5 dưới 200k cho 6 người tối mai 7h", intents: [search_restaurant, check_availability], slots: {cuisine: "Lẩu", area: "Quận 5", budget_max: 200000, party_size: 6, time: "19:00", date: "{tomorrow}"}}
+    - {text: "toi nay 2 nguoi an do nhat quan 1 luc 8h", intents: [search_restaurant, check_availability, create_reservation], slots: {cuisine: "Nhật Bản", area: "Quận 1", party_size: 2, time: "20:00", date: "{today}"}}
+    - {text: "Quán nướng Tân Bình, 10 người, trưa mai 12h", intents: [search_restaurant, check_availability, create_reservation], slots: {cuisine: "Nướng", area: "Tân Bình", party_size: 10, time: "12:00", date: "{tomorrow}"}}
+    - {text: "kiếm chỗ ăn chay rẻ rẻ cho 3 người tối mai", intents: [search_restaurant, check_availability], slots: {cuisine: "Chay", party_size: 3, date: "{tomorrow}"}}
+    - {text: "hải sản quận 1 tầm 350 nghìn một người, 4 người, 6 rưỡi tối nay", intents: [search_restaurant, check_availability], slots: {cuisine: "Hải sản", area: "Quận 1", party_size: 4, time: "18:30", date: "{today}"}}
+    - {text: "pizza phú nhuận 5 ng 7h tối mai", intents: [search_restaurant, check_availability, create_reservation], slots: {cuisine: "Pizza", area: "Phú Nhuận", party_size: 5, time: "19:00", date: "{tomorrow}"}}
+    - {text: "Mình cần một quán món Việt ở quận 3, giá bình dân, cho nhóm 8 người vào trưa mai lúc 11 rưỡi", intents: [search_restaurant, check_availability, create_reservation], slots: {cuisine: "Món Việt", area: "Quận 3", party_size: 8, time: "11:30", date: "{tomorrow}"}}
+    - {text: "lau quan 5 duoi 250k", intents: [search_restaurant], slots: {cuisine: "Lẩu", area: "Quận 5", budget_max: 250000}}
+
+thieu_thong_tin:
+  context: none
+  cases:
+    - {text: "Đặt bàn giúp mình", intents: [create_reservation], blocks_any: [ask_slots]}
+    - {text: "dat ban", intents: [create_reservation], blocks_any: [ask_slots]}
+    - {text: "Còn bàn không em?", intents: [check_availability, search_restaurant], blocks_any: [ask_slots]}
+    - {text: "cho mình book 1 bàn tối mai", intents: [create_reservation], slots: {date: "{tomorrow}"}, blocks_any: [ask_slots]}
+    - {text: "Tôi muốn đặt chỗ cho 4 người", intents: [create_reservation], slots: {party_size: 4}, blocks_any: [ask_slots]}
+    - {text: "tìm quán ăn", intents: [search_restaurant], blocks_any: [ask_slots]}
+    - {text: "hủy đơn giúp tôi", intents: [cancel_reservation], blocks_any: [ask_slots]}
+    - {text: "doi gio dat ban", intents: [update_reservation], blocks_any: [ask_slots]}
+
+bo_sung:
+  context: search_lau
+  cases:
+    - {text: "Tối mai 7 giờ nhé, 4 người", intents: [search_restaurant, check_availability, create_reservation], slots: {date: "{tomorrow}", time: "19:00", party_size: 4, cuisine: "Lẩu"}}
+    - {text: "6 nguoi", intents: [search_restaurant, check_availability, create_reservation], slots: {party_size: 6, cuisine: "Lẩu"}}
+    - {text: "à quên, nhà mình đi 5 người, khoảng 6 rưỡi tối nay", intents: [search_restaurant, check_availability, create_reservation], slots: {party_size: 5, time: "18:30", date: "{today}"}}
+    - {text: "toi mai nha", intents: [search_restaurant, check_availability, create_reservation], slots: {date: "{tomorrow}", area: "Quận 5"}}
+    - {text: "lúc 18h30", intents: [search_restaurant, check_availability, create_reservation], slots: {time: "18:30"}}
+    - {text: "dưới 200k thôi nha", intents: [search_restaurant], slots: {budget_max: 200000, cuisine: "Lẩu"}}
+    - {text: "cho 2 nguoi luc 7h toi mai", intents: [search_restaurant, check_availability, create_reservation], slots: {party_size: 2, time: "19:00", date: "{tomorrow}"}}
+    - {text: "ngày mai, buổi trưa 12 giờ, nhóm 3 người", intents: [search_restaurant, check_availability, create_reservation], slots: {date: "{tomorrow}", time: "12:00", party_size: 3}}
+
+thay_doi:
+  context: search_full
+  cases:
+    - {text: "Đổi sang 8 giờ tối đi", intents: [search_restaurant, check_availability], slots: {time: "20:00", party_size: 4, cuisine: "Lẩu"}}
+    - {text: "thoi 5 nguoi thoi", intents: [search_restaurant, check_availability], slots: {party_size: 5, time: "19:00"}}
+    - {text: "thêm 2 người nữa nhé", intents: [search_restaurant, check_availability], slots: {party_size: 6}}
+    - {text: "bớt 1 người", intents: [search_restaurant, check_availability], slots: {party_size: 3}}
+    - {text: "Chuyển qua hôm nay luôn được không", intents: [search_restaurant, check_availability], slots: {date: "{today}", time: "19:00"}}
+    - {text: "đổi sang 8", intents: [search_restaurant, check_availability, update_reservation], clarify: true}
+    - {text: "thôi không ăn lẩu nữa, chuyển qua đồ nướng", intents: [search_restaurant], slots: {cuisine: "Nướng", party_size: 4, date: "{tomorrow}"}}
+    - {text: "cho mình lùi lại 30 phút, 7 rưỡi", intents: [search_restaurant, check_availability], slots: {time: "19:30"}}
+
+xoa_dieu_kien:
+  context: search_criteria
+  cases:
+    - {text: "Không cần ở quận 5 nữa, chỗ nào cũng được", intents: [search_restaurant], removed: [area], slots: {cuisine: "Lẩu"}}
+    - {text: "bo dieu kien gia di", intents: [search_restaurant], removed: [budget_max]}
+    - {text: "giá nào cũng được", intents: [search_restaurant], removed: [budget_max]}
+    - {text: "khu vực không quan trọng", intents: [search_restaurant], removed: [area]}
+    - {text: "Ăn gì cũng được, không nhất thiết phải lẩu", intents: [search_restaurant], removed: [cuisine]}
+    - {text: "khỏi lọc theo quận", intents: [search_restaurant], removed: [area]}
+    - {text: "không cần rẻ đâu, quán ngon là được", intents: [search_restaurant], removed: [budget_max]}
+    - {text: "bỏ quận 5 ra giúp mình", intents: [search_restaurant], removed: [area]}
+
+doi_chu_de_quay_lai:
+  context: search_full
+  cases:
+    - {text: "À mà quán có chỗ đậu ô tô không em?", intents: [policy_question, restaurant_details]}
+    - {text: "nếu đến trễ 15 phút có sao không", intents: [policy_question]}
+    - {text: "be 5 tuoi di an co tinh tien khong", intents: [policy_question]}
+    - {text: "Khoan, cho mình hỏi đặt cọc bao nhiêu đã", intents: [policy_question]}
+    - {text: "Ừ, tiếp tục tìm quán đi", intents: [confirm, search_restaurant], context: resume}
+    - {text: "ok tiếp đi em", intents: [confirm, search_restaurant], context: resume}
+    - {text: "thôi khỏi, để sau", intents: [deny], context: resume, confirmation: "no"}
+    - {text: "uh quay lại chuyện đặt bàn lúc nãy", intents: [confirm, search_restaurant, create_reservation], context: resume}
+
+dat_ban:
+  context: results_multi
+  cases:
+    - {text: "Đặt quán thứ 2 nhé", intents: [create_reservation], slots: {restaurant_id: NH005}}
+    - {text: "lay quan dau tien", intents: [create_reservation], slots: {restaurant_id: NH003}}
+    - {text: "Chốt Sushi Sora giúp mình", intents: [create_reservation], slots: {restaurant_id: NH003}}
+    - {text: "book quán cuối cùng", intents: [create_reservation], slots: {restaurant_id: NH007}}
+    - {text: "Mình chọn Chay An Nhiên, đặt luôn đi em", intents: [create_reservation], slots: {restaurant_id: NH005}}
+    - {text: "dat cho minh quan so 3", intents: [create_reservation], slots: {restaurant_id: NH007}}
+    - {text: "Đặt bàn Lẩu Nhà Mình tối mai 7h cho 4 người", intents: [create_reservation], slots: {restaurant_id: NH001, party_size: 4, time: "19:00", date: "{tomorrow}"}, context: none}
+    - {text: "giu cho e 1 ban o Hai San Bien Xanh 6h toi mai 2 nguoi", intents: [create_reservation], slots: {restaurant_id: NH007, party_size: 2, time: "18:00", date: "{tomorrow}"}, context: none}
+
+sua_don:
+  context: none
+  cases:
+    - {text: "Đổi đơn DB001 sang 8 giờ tối giúp mình", intents: [update_reservation], slots: {booking_code: DB001, time: "20:00"}}
+    - {text: "doi DB005 thanh 6 nguoi", intents: [update_reservation], slots: {booking_code: DB005, party_size: 6}}
+    - {text: "Mã DB001 tăng thêm 2 khách được không", intents: [update_reservation], slots: {booking_code: DB001}}
+    - {text: "dời DB003 sang ngày mốt", intents: [update_reservation], slots: {booking_code: DB003, date: "{d2}"}}
+    - {text: "DB005 đổi giờ 19h", intents: [update_reservation], slots: {booking_code: DB005, time: "19:00"}}
+    - {text: "Mình có đơn DB001, nhà có việc nên muốn lùi sang 8 rưỡi tối, vẫn 4 người như cũ", intents: [update_reservation], slots: {booking_code: DB001, time: "20:30"}}
+    - {text: "sua don DB003 giam xuong 2 nguoi", intents: [update_reservation], slots: {booking_code: DB003, party_size: 2}}
+    - {text: "chuyển DB005 qua tối mai", intents: [update_reservation], slots: {booking_code: DB005, date: "{tomorrow}"}}
+
+huy_don:
+  context: none
+  cases:
+    - {text: "Hủy đơn DB005 giúp mình", intents: [cancel_reservation], slots: {booking_code: DB005}, blocks_any: [confirm]}
+    - {text: "huy DB001", intents: [cancel_reservation], slots: {booking_code: DB001}}
+    - {text: "Mình bận đột xuất nên không đi được, cancel giùm đơn DB003 nha", intents: [cancel_reservation], slots: {booking_code: DB003}}
+    - {text: "bỏ đặt chỗ DB005", intents: [cancel_reservation], slots: {booking_code: DB005}}
+    - {text: "khong di nua, huy ban DB001 nhe", intents: [cancel_reservation], slots: {booking_code: DB001}}
+    - {text: "Cho tôi hủy mã đặt bàn DB003", intents: [cancel_reservation], slots: {booking_code: DB003}}
+    - {text: "hũy đơn DB005", intents: [cancel_reservation], slots: {booking_code: DB005}}
+    - {text: "DB001 hủy", intents: [cancel_reservation], slots: {booking_code: DB001}}
+
+tu_choi_xac_nhan:
+  context: pending_create
+  cases:
+    - {text: "Thôi khỏi đặt", intents: [deny], confirmation: "no", blocks_any: [pending_cancelled]}
+    - {text: "khong", intents: [deny], confirmation: "no"}
+    - {text: "để mình bàn với gia đình đã, chưa đặt vội", intents: [deny], confirmation: "no"}
+    - {text: "no", intents: [deny], confirmation: "no"}
+    - {text: "đừng đặt nha", intents: [deny], confirmation: "no"}
+    - {text: "thoi bo qua di", intents: [deny], confirmation: "no"}
+    - {text: "Không, mình đổi ý rồi", intents: [deny], confirmation: "no"}
+    - {text: "chưa đâu em", intents: [deny], confirmation: "no"}
+
+dong_y_xac_nhan:
+  context: pending_cancel
+  cases:
+    - {text: "Ừ hủy đi", intents: [confirm, cancel_reservation], confirmation: "yes", blocks_any: [action_done]}
+    - {text: "dong y", intents: [confirm], confirmation: "yes"}
+    - {text: "ok em", intents: [confirm], confirmation: "yes"}
+    - {text: "Chắc chắn rồi, hủy giúp mình", intents: [confirm, cancel_reservation], confirmation: "yes"}
+    - {text: "yes", intents: [confirm], confirmation: "yes"}
+    - {text: "đúng vậy", intents: [confirm], confirmation: "yes"}
+    - {text: "xac nhan", intents: [confirm], confirmation: "yes"}
+    - {text: "Vâng, em làm luôn đi", intents: [confirm], confirmation: "yes"}
+
+chinh_sach:
+  context: none
+  cases:
+    - {text: "Hủy bàn trước bao lâu thì không mất phí?", intents: [policy_question], blocks_any: [policy_answer]}
+    - {text: "tien coc bao lau thi duoc hoan", intents: [policy_question]}
+    - {text: "Được mang rượu vang vào quán không, có tính phí không?", intents: [policy_question]}
+    - {text: "phòng VIP có phụ thu không", intents: [policy_question]}
+    - {text: "Nhà mình có em bé 2 tuổi, quán có ghế ăn cho trẻ không?", intents: [policy_question]}
+    - {text: "co xuat hoa don VAT cho cong ty duoc ko", intents: [policy_question]}
+    - {text: "giữ xe ô tô mất bao nhiêu tiền", intents: [policy_question]}
+    - {text: "Đi đoàn 20 người thì đặt thế nào", intents: [policy_question]}
+
+khieu_nai:
+  context: none
+  cases:
+    - {text: "Tôi đến quán mà nhân viên bảo không có đơn đặt của tôi", intents: [complaint], blocks_any: [confirm]}
+    - {text: "phuc vu cham qua, doi 40 phut chua co mon", intents: [complaint]}
+    - {text: "Hóa đơn bị tính dư 2 phần lẩu, tôi muốn khiếu nại", intents: [complaint]}
+    - {text: "nhân viên thái độ lồi lõm quá", intents: [complaint]}
+    - {text: "Món ăn có tóc, quá tệ", intents: [complaint]}
+    - {text: "toi muon gap quan ly de phan anh", intents: [complaint]}
+    - {text: "Đặt bàn rồi mà tới nơi phải đứng chờ nửa tiếng không có chỗ", intents: [complaint]}
+    - {text: "quán tính sai tiền", intents: [complaint]}
+
+loi_app:
+  context: none
+  cases:
+    - {text: "App không gửi mã OTP cho mình", intents: [app_issue]}
+    - {text: "ung dung bi vang ra khi mo", intents: [app_issue]}
+    - {text: "Bấm nút đặt bàn thì báo lỗi hệ thống", intents: [app_issue]}
+    - {text: "không đăng nhập được app", intents: [app_issue]}
+    - {text: "web load mãi không lên", intents: [app_issue]}
+    - {text: "da tru tien coc ma app bao that bai", intents: [app_issue, complaint]}
+    - {text: "Không thấy thông báo xác nhận đặt bàn trên điện thoại", intents: [app_issue]}
+    - {text: "app lag quá", intents: [app_issue]}
+
+ngoai_pham_vi:
+  context: none
+  cases:
+    - {text: "Hôm nay giá vàng bao nhiêu?", intents: [out_of_scope], blocks_any: [out_of_scope]}
+    - {text: "viet giup minh bai van ta me", intents: [out_of_scope]}
+    - {text: "Đặt vé máy bay đi Hà Nội giúp mình", intents: [out_of_scope]}
+    - {text: "1 + 1 bằng mấy", intents: [out_of_scope]}
+    - {text: "kể chuyện cười nghe đi", intents: [out_of_scope, chitchat]}
+    - {text: "tỷ giá đô hôm nay", intents: [out_of_scope]}
+    - {text: "dạy mình nấu phở bò với", intents: [out_of_scope]}
+    - {text: "Trận MU tối qua mấy mấy?", intents: [out_of_scope]}

@@ -1,0 +1,6 @@
+﻿ma_dat_ban,ma_khach_hang,ma_nha_hang,ngay_dat,gio_dat,so_nguoi,trang_thai,ghi_chu
+DB001,KH001,NH001,2026-11-01,18:30,4,Đã xác nhận,Ghi chú: bàn gần cửa sổ
+DB002,KH002,NH003,2026-11-01,19:00,2,Chờ xác nhận,
+DB003,KH003,NH005,2026-11-02,12:00,3,Đã xác nhận,
+DB004,KH004,NH004,2026-11-02,19:30,6,Đã hủy,Khách yêu cầu hủy
+DB005,KH005,NH002,2026-11-03,18:00,5,Chờ xác nhận,

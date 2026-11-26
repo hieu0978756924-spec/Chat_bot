@@ -1,0 +1,18 @@
+name: demo_khieu_nai_ma_phieu
+turns:
+  - user: "Tôi đã đặt bàn nhưng đến nơi lại không có bàn."
+    expect:
+      intents_any: [complaint]
+      blocks_all: [confirm]
+      tools_not: [create_support_ticket]
+  - user: "có, tạo phiếu giúp mình"
+    expect:
+      tools:
+        - {tool: create_support_ticket}
+      reply_contains: ["Đã tạo phiếu hỗ trợ HT"]
+  - user: "Cho tôi mã phiếu khiếu nại vừa tạo."
+    expect:
+      tools:
+        - {tool: get_support_ticket}
+      tools_not: [create_support_ticket]
+      reply_contains: ["Phiếu hỗ trợ HT"]

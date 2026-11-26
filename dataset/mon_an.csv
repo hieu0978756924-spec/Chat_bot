@@ -1,0 +1,39 @@
+﻿ma_mon,ma_nha_hang,ten_mon,gia_vnd,loai_mon,mo_ta,phu_hop_an_chay
+MA001,NH001,Lẩu Thái hải sản,289000,Lẩu,"Nước lẩu chua cay, hải sản và rau ăn kèm",False
+MA002,NH001,Lẩu nấm gà,239000,Lẩu,"Nước lẩu nấm, gà và rau theo mùa",False
+MA003,NH001,Ba chỉ bò Mỹ,129000,Món gọi thêm,Thịt bò dùng kèm lẩu,False
+MA004,NH002,Cơm tấm sườn bì chả,65000,Cơm,"Cơm tấm với sườn, bì và chả",False
+MA005,NH002,Canh chua cá,95000,Món chính,Canh chua kiểu miền Nam,False
+MA006,NH002,Gỏi cuốn tôm thịt,55000,Khai vị,Gỏi cuốn ăn kèm nước chấm,False
+MA007,NH003,Sushi tổng hợp 12 miếng,259000,Sushi,Phần sushi tổng hợp,False
+MA008,NH003,Mì ramen miso,165000,Mì,Mì ramen nước dùng miso,False
+MA009,NH003,Salad rong biển,79000,Khai vị,Rong biển trộn mè,True
+MA010,NH004,Ba chỉ bò nướng,189000,Nướng,Ba chỉ bò tẩm sốt,False
+MA011,NH004,Set nướng 2 người,399000,Combo,Set thịt nướng dành cho hai người,False
+MA012,NH005,Cơm sen chay,69000,Cơm,Cơm với món chay theo ngày,True
+MA013,NH005,Lẩu nấm chay,189000,Lẩu,Lẩu nấm và rau củ,True
+MA014,NH006,Pizza phô mai 4 loại,179000,Pizza,Pizza phô mai,True
+MA015,NH006,Mì Ý sốt cà chua,129000,Mì Ý,Mì Ý sốt cà chua,True
+MA016,NH007,Tôm hấp sả,229000,Hải sản,Tôm hấp sả,False
+MA017,NH007,Cá nướng muối ớt,259000,Hải sản,Cá nướng muối ớt,False
+MA018,NH008,Trà đào cam sả,45000,Đồ uống,"Trà đào, cam và sả",True
+MA019,NH008,Bánh tiramisu,55000,Bánh,Bánh tiramisu,True
+MA020,NH009,Lẩu hải sản chua cay,299000,Lẩu,"Tôm, mực, cá với nước lẩu chua cay",False
+MA021,NH009,Lẩu cá dằm,259000,Lẩu,Lẩu cá dằm đặc sản Quy Nhơn,False
+MA022,NH009,Lẩu nấm chay,199000,Lẩu,"Nước lẩu chay từ nấm và rau củ",True
+MA023,NH009,Đậu hũ non sốt nấm,59000,Món chay,Đậu hũ non sốt nấm đông cô,True
+MA024,NH009,Mực nướng sa tế,129000,Nướng,Mực nướng sa tế,False
+MA025,NH010,Lẩu bò nhúng giấm,289000,Lẩu,Bò nhúng giấm kèm bánh tráng rau sống,False
+MA026,NH010,Lẩu thái bò,269000,Lẩu,Lẩu thái chua cay với thịt bò,False
+MA027,NH010,Bò lá lốt,89000,Món chính,Bò cuốn lá lốt nướng,False
+MA028,NH011,Cơm chay thập cẩm,65000,Cơm,Cơm với các món chay theo ngày,True
+MA029,NH011,Lẩu nấm thuần chay,179000,Lẩu,Lẩu nấm thuần chay,True
+MA030,NH011,Gỏi cuốn chay,45000,Khai vị,Gỏi cuốn rau củ và đậu hũ,True
+MA031,NH012,Tôm hùm nướng phô mai,690000,Hải sản,Tôm hùm nướng phô mai,False
+MA032,NH012,Ốc hương rang muối,189000,Hải sản,Ốc hương rang muối ớt,False
+MA033,NH012,Cháo hải sản cho bé,69000,Món chính,Cháo hải sản nấu nhừ phần nhỏ,False
+MA034,NH013,Bánh xèo tôm nhảy,60000,Món chính,Bánh xèo tôm nhảy đặc sản,False
+MA035,NH013,Bún chả cá,45000,Bún,Bún chả cá Quy Nhơn,False
+MA036,NH013,Bánh hỏi lòng heo,55000,Món chính,Bánh hỏi lòng heo,False
+MA037,NH014,Cà phê muối,35000,Đồ uống,Cà phê muối,True
+MA038,NH014,Bánh flan,30000,Bánh,Bánh flan caramen,True

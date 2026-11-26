@@ -1,0 +1,13 @@
+name: khieu_nai_tao_phieu
+turns:
+  - user: "Tôi tới quán đúng giờ mà nhân viên nói không có đơn DB001 của tôi"
+    expect:
+      intents_any: [complaint]
+      slots: {booking_code: "DB001"}
+      blocks_all: [confirm]
+      tools_not: [create_support_ticket]
+  - user: "ừ tạo phiếu giúp mình"
+    expect:
+      tools:
+        - {tool: create_support_ticket, params: {booking_code: "DB001", category: "Khiếu nại"}}
+      reply_contains: ["Đã tạo phiếu hỗ trợ HT"]

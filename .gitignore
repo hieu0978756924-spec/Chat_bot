@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Môi trường / bí mật
+.env
+
+# Log
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/

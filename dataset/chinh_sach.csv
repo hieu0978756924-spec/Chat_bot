@@ -1,0 +1,9 @@
+﻿ma_chinh_sach,ma_nha_hang,loai_chinh_sach,noi_dung
+CS001,NH001,den_tre,Khách nên báo trước nếu đến trễ. Thời gian giữ bàn mẫu là 15 phút; cần xác nhận lại với nhà hàng khi trễ hơn.
+CS002,NH001,huy_dat_ban,"Yêu cầu hủy nên được gửi trước giờ đặt. Nếu có đặt cọc, cần kiểm tra điều kiện đặt cọc cụ thể."
+CS003,NH002,doi_so_nguoi,Có thể yêu cầu thay đổi số người; nhà hàng cần xác nhận sức chứa trước khi cập nhật.
+CS004,NH003,di_ung_thuc_pham,Khách cần thông báo dị ứng trước khi gọi món. Chatbot không được cam kết món hoàn toàn không có chất gây dị ứng nếu chưa có xác nhận.
+CS005,NH004,den_tre,Khách nên liên hệ nhà hàng khi dự kiến đến trễ. Việc giữ bàn phụ thuộc tình trạng phục vụ thực tế.
+CS006,NH005,an_chay,Có menu món chay. Khách nên báo trước về yêu cầu ăn thuần chay hoặc dị ứng.
+CS007,NH007,dat_nhom,Nhóm đông nên gửi yêu cầu trước để nhà hàng xác nhận sức chứa và cách sắp xếp bàn.
+CS008,NH008,huy_dat_ban,"Với đặt chỗ nhóm, khách nên xác nhận chính sách hủy trực tiếp với nhà hàng."

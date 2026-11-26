@@ -1,0 +1,14 @@
+name: sua_don_tang_khach
+turns:
+  - user: "Đơn DB001 của mình tăng thêm 2 khách nhé"
+    expect:
+      intents_any: [update_reservation]
+      slots: {booking_code: "DB001"}
+      blocks_all: [confirm]
+      reply_contains: ["6 người"]
+      tools_not: [update_reservation]
+  - user: "đồng ý"
+    expect:
+      tools:
+        - {tool: update_reservation, params: {booking_code: "DB001", party_size: 6}}
+      reply_contains: ["Đã cập nhật đơn", "6 người"]

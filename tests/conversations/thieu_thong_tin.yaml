@@ -1,0 +1,24 @@
+name: thieu_thong_tin_bo_sung_dan
+turns:
+  - user: "Mình muốn đặt bàn"
+    expect:
+      intents_any: [create_reservation]
+      blocks_all: [ask_slots]
+      tools_not: [create_reservation]
+  - user: "Ở Lẩu Nhà Mình nhé"
+    expect:
+      slots: {restaurant_id: "NH001"}
+      blocks_all: [ask_slots]
+      tools_not: [create_reservation]
+  - user: "tối mai 7 giờ, 4 người"
+    expect:
+      slots: {restaurant_id: "NH001", date: "{tomorrow}", time: "19:00", party_size: 4}
+      tools:
+        - {tool: check_table_availability, params: {restaurant_id: "NH001", date: "{tomorrow}", time: "19:00", party_size: 4}}
+      blocks_all: [confirm]
+      tools_not: [create_reservation]
+  - user: "xác nhận"
+    expect:
+      tools:
+        - {tool: create_reservation, params: {restaurant_id: "NH001", party_size: 4, time: "19:00"}}
+      reply_contains: ["Đặt bàn thành công"]

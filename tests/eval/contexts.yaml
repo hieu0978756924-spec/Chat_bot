@@ -1,0 +1,41 @@
+# Ngữ cảnh hội thoại dựng sẵn cho các ca đánh giá NLU (nạp thẳng vào ConversationState).
+# Biến: {today}, {tomorrow}, {d2} (= hôm nay + 2 ngày).
+none: {}
+
+search_lau:            # đang tìm lẩu ở Quận 5, chưa có ngày/giờ/số người
+  slots: {cuisine: "Lẩu", area: "Quận 5"}
+  active_task: search_restaurant
+  results: [NH001]
+
+search_full:           # đã tìm lẩu và có đủ ngày/giờ/số người
+  slots: {cuisine: "Lẩu", date: "{tomorrow}", time: "19:00", party_size: 4}
+  active_task: search_restaurant
+  results: [NH001]
+
+search_criteria:       # nhiều tiêu chí để thử xóa điều kiện
+  slots: {cuisine: "Lẩu", area: "Quận 5", budget_max: 200000, date: "{tomorrow}", time: "19:00", party_size: 4}
+  active_task: search_restaurant
+  results: [NH001]
+
+results_multi:         # vừa liệt kê 3 quán ở Quận 1, đủ thông tin đặt bàn
+  slots: {area: "Quận 1", date: "{tomorrow}", time: "18:30", party_size: 2}
+  active_task: search_restaurant
+  results: [NH003, NH005, NH007]
+
+pending_create:        # đang chờ xác nhận đặt bàn
+  slots: {cuisine: "Lẩu", restaurant_id: NH001, date: "{tomorrow}", time: "19:00", party_size: 4}
+  active_task: create_reservation
+  results: [NH001]
+  pending: create_reservation
+
+pending_cancel:        # đang chờ xác nhận hủy DB003
+  slots: {booking_code: DB003}
+  active_task: cancel_reservation
+  pending: cancel_reservation
+
+resume:                # vừa trả lời câu hỏi xen ngang, đang hỏi có tiếp tục tìm quán không
+  slots: {cuisine: "Lẩu", date: "{tomorrow}", time: "19:00", party_size: 4}
+  active_task: search_restaurant
+  results: [NH001]
+  awaiting_resume: true
+  task_stack: [search_restaurant]

@@ -1,0 +1,49 @@
+name: demo_dat_doi_huy
+turns:
+  - user: "Tôi muốn đặt bàn cho 4 người vào 19h ngày mai."
+    expect:
+      intents_any: [create_reservation]
+      slots: {party_size: 4, time: "19:00", date: "{tomorrow}", cuisine: null, area: null}
+      tools_not: [create_reservation]
+      availability_matches_tools: true
+  - user: "Lẩu Biển Quy Nhơn nhé."
+    expect:
+      slots: {restaurant_id: "NH009"}
+      blocks_all: [confirm]
+  - user: "Đồng ý, đặt giúp mình."
+    expect:
+      tools:
+        - {tool: create_reservation, params: {restaurant_id: "NH009", party_size: 4, time: "19:00"}}
+      reply_contains: ["Đặt bàn thành công"]
+  - user: "Cho tôi biết mã đặt bàn vừa tạo."
+    expect:
+      tools:
+        - {tool: get_reservation}
+      reply_contains: ["DB"]
+  - user: "Tôi muốn đổi giờ đặt bàn từ 19h sang 20h."
+    expect:
+      blocks_all: [confirm]
+      reply_contains: ["20:00"]
+      tools_not: [update_reservation]
+  - user: "đồng ý"
+    expect:
+      tools:
+        - {tool: update_reservation, params: {time: "20:00"}}
+  - user: "Tăng số người từ 4 lên 6 người được không?"
+    expect:
+      blocks_all: [confirm]
+      reply_contains: ["6 người"]
+      tools_not: [create_reservation]
+  - user: "đồng ý"
+    expect:
+      tools:
+        - {tool: update_reservation, params: {party_size: 6}}
+  - user: "Hủy cái bàn vừa đặt giúp mình."
+    expect:
+      blocks_all: [confirm]
+      tools_not: [cancel_reservation]
+  - user: "Tôi xác nhận hủy bàn."
+    expect:
+      tools:
+        - {tool: cancel_reservation}
+      reply_contains: ["Đã hủy đơn"]

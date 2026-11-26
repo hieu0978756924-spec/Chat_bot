@@ -1,0 +1,27 @@
+# Lỗi người dùng báo (18/11): câu hỏi mở bị trả lời bằng "cho em xin món và khu vực".
+name: hoi_mo_ban_trong_va_mon_tu_do
+turns:
+  - user: "nhà hàng nào conf bàn trống"
+    expect:
+      blocks_all: [restaurant_list, ask_slots]
+      reply_contains: ["ngày", "số người"]
+      reply_not_contains: ["món bạn muốn ăn"]
+  - user: "tối nay 4 người"
+    expect:
+      slots: {party_size: 4, date: "{today}"}
+      tools:
+        - {tool: check_table_availability, params: {party_size: 4, time: null}}
+      availability_matches_tools: true
+  - user: "tôi muốn ăn mì cay thìcó những quán nào"
+    expect:
+      tools:
+        - {tool: search_menu}
+      reply_contains: ["mì cay", "Sushi Sora"]
+      reply_not_contains: ["món bạn muốn ăn"]
+  - user: "Sushi Sora tối mai 7h 2 người"
+    expect:
+      slots: {restaurant_id: "NH003", party_size: 2, time: "19:00", date: "{tomorrow}"}
+      tools:
+        - {tool: check_table_availability, params: {restaurant_id: "NH003", party_size: 2, time: "19:00"}}
+      tools_not: [create_reservation]
+      availability_matches_tools: true

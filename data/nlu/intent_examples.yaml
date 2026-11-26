@@ -1,0 +1,223 @@
+# Câu mẫu cho bộ phân loại ý định DỰ PHÒNG (embedding 1-NN theo nhãn), dùng khi Ollama không chạy.
+# QUY ĐỊNH: không chép câu trong tests/eval/*.yaml vào đây (có test tự động kiểm tra).
+# Nhãn "help" = người dùng hỏi bot làm được gì (ánh xạ thành intent chitchat + cờ help).
+# Câu mẫu được chuẩn hóa + che thực thể (mã đơn, tên quán, con số) trước khi embedding.
+
+greeting:
+  - xin chào
+  - chào em nhé
+  - hello
+  - alo có ai không
+  - chao ban
+  - em ơi
+  - hey
+  - chào buổi tối
+
+help:
+  - bạn làm được những gì
+  - bot hỗ trợ được gì vậy
+  - em giúp được gì cho anh
+  - hướng dẫn sử dụng
+  - ban co the lam gi
+  - có những chức năng nào
+
+search_restaurant:
+  - gợi ý cho mình vài quán nướng ngon
+  - có nhà hàng nào ở Bình Thạnh không
+  - tìm chỗ ăn hải sản cho gia đình
+  - quán nào bán đồ Nhật ở quận 3
+  - kiếm giúp em nhà hàng không gian đẹp để hẹn hò
+  - tim quan an ngon gan quan 1
+  - muốn ăn món Hàn, có chỗ nào không
+  - nhà hàng nào giá bình dân mà ngon
+  - có quán pizza nào được đánh giá cao không
+  - chỗ nào ăn tối ổn cho nhóm bạn
+  - quán lẩu
+  - quán bún bò gần đây
+  - tìm nhà hàng ở Gò Vấp giá dưới 300 nghìn
+  - kiem cho minh quan an dem
+  - có chỗ ăn chay nào không bạn
+  - tìm quán cho nhóm người tối nay
+  - mình cần quán ăn trưa văn phòng giá mềm
+  - thôi tìm quán khác đi
+  - đổi qua loại món khác giúp mình
+
+restaurant_details:
+  - quán này mở cửa đến mấy giờ
+  - địa chỉ của nhà hàng đó ở đâu
+  - cho mình xem đánh giá của quán
+  - số điện thoại nhà hàng là gì
+  - nha hang do o dau vay
+  - quán đó có ngon không, mọi người review sao
+  - thông tin chi tiết về quán
+
+search_menu:
+  - thực đơn có những món gì
+  - món nào dưới 80 nghìn
+  - giá một phần sushi bao nhiêu
+  - quán có món gì cho người ăn chay
+  - cho xem menu với giá
+  - co mon nao re khong
+  - món đặc trưng của quán là gì
+  - menu
+  - danh sách món ăn
+  - món ăn chơi có gì
+  - nước uống giá bao nhiêu
+  - cho mình xem các món giá rẻ
+
+check_availability:
+  - tối thứ sáu còn chỗ cho 5 người không
+  - 8 giờ tối nay còn bàn trống không em
+  - kiểm tra giúp còn bàn trưa mai không
+  - quán còn chỗ không
+  - con ban cho 3 nguoi luc 6h chieu khong
+  - khung giờ nào còn trống
+  - giờ đó còn trống không
+  - có còn bàn cho nhóm không
+
+create_reservation:
+  - đặt cho anh một bàn 6 người lúc 7 giờ
+  - mình muốn đặt chỗ ở quán đó
+  - book bàn tối thứ bảy giúp em
+  - giữ cho mình một bàn nhé
+  - chốt đặt quán đầu tiên
+  - dat ban cho 2 nguoi toi nay
+  - lấy quán thứ hai đi em
+  - đặt bàn ở quán Lẩu Nhà Mình
+  - mình cần đặt một bàn
+  - đặt chỗ giúp mình
+  - book quán này luôn
+  - chọn quán này, đặt đi
+  - giữ chỗ ở Sushi Sora lúc 7 giờ tối cho 3 người
+  - dat quan Goc Nuong Han toi mai
+  - mình đặt quán số 2
+  - có chỗ thì đặt luôn cho mình
+  - được thì chốt luôn nha
+  - nếu trống thì book giúp mình
+  - vậy đặt bàn đó luôn đi
+
+get_reservation:
+  - kiểm tra giúp đơn đặt bàn của tôi
+  - mã DB010 của mình đặt lúc mấy giờ
+  - xem lại thông tin đặt chỗ
+  - tra cứu giúp đơn của mình
+  - đơn DB020 đã được xác nhận chưa
+
+update_reservation:
+  - dời lịch đặt bàn sang thứ bảy
+  - cho mình lùi giờ đặt sang 8 giờ
+  - đơn của mình tăng thêm 3 khách
+  - sửa số người trong đơn thành 5
+  - doi gio dat ban sang 19h
+  - chuyển đặt bàn sang ngày khác
+  - đơn DB020 đổi sang 7 giờ tối
+  - mã DB030 cho thêm 2 người
+  - doi don DB040 sang ngay mai
+  - đơn DB050 giảm còn 4 người
+  - sửa đơn DB060 thành 18h
+  - DB070 lùi sang thứ 7
+
+cancel_reservation:
+  - mình không đi được nữa, hủy đơn giúp
+  - hủy lịch đặt bàn tối nay
+  - cancel đơn đặt chỗ
+  - bỏ đặt bàn mã DB009
+  - huy dat ban giup minh
+  - hủy giúp mình đơn DB020
+  - huy ma DB030
+  - xin hủy bàn đã đặt
+  - DB040 không đi nữa, hủy nhé
+
+policy_question:
+  - hủy bàn có bị mất phí không
+  - tiền cọc được hoàn lại khi nào
+  - có cho mang bánh kem vào không
+  - quán có phòng riêng không
+  - trẻ em có được giảm giá không
+  - giữ bàn được bao lâu nếu đến muộn
+  - đặt bàn có cần đặt cọc không
+  - chinh sach doi gio nhu the nao
+  - có xuất hóa đơn đỏ không
+  - mang đồ uống từ ngoài vào có mất phí không
+  - quán có chỗ gửi xe máy không
+  - đặt tiệc đông người có ưu đãi không
+  - quy định về đến trễ là gì
+  - có trang trí sinh nhật không
+  - thanh toán bằng thẻ được không
+  - dùng voucher thế nào
+  - phụ thu phòng riêng bao nhiêu
+  - quan co duoc mang thu cung vao khong
+
+complaint:
+  - phục vụ quá chậm, tôi muốn phản ánh
+  - quán tính tiền sai cho tôi
+  - đến nơi nhân viên bảo không có đơn đặt
+  - món ăn có vấn đề, tôi muốn khiếu nại
+  - thái độ nhân viên rất tệ
+  - tôi muốn gặp quản lý
+  - đã đặt bàn mà tới quán không có chỗ ngồi
+  - chờ món lâu quá rồi
+  - hóa đơn bị tính thừa tiền
+  - không hài lòng với dịch vụ
+  - tôi muốn nói chuyện với người hỗ trợ
+  - quán làm mất đơn đặt bàn của tôi
+
+app_issue:
+  - ứng dụng không mở được
+  - không nhận được tin nhắn xác nhận
+  - bấm đặt bàn mà báo lỗi
+  - app bị treo khi thanh toán
+  - khong dang nhap duoc tai khoan
+  - trang web bị lỗi
+  - không nhận được mã xác thực
+  - app bị đơ
+  - bị trừ tiền mà ứng dụng không ghi nhận
+
+confirm:
+  - đúng rồi
+  - ok chốt
+  - đồng ý nhé
+  - xác nhận giúp mình
+  - được em
+  - "yes"
+  - uh làm đi
+  - chuẩn rồi
+  - có
+  - ừ
+  - tiếp tục đi
+  - được, làm giúp mình
+  - ok đặt luôn
+
+deny:
+  - không
+  - thôi khỏi
+  - mình không đồng ý đâu
+  - để mình suy nghĩ thêm
+  - khoan đã
+  - "no"
+  - khong can dau
+  - thôi không làm nữa
+  - chưa muốn
+  - đừng
+
+chitchat:
+  - cảm ơn em nhiều
+  - tạm biệt nhé
+  - em tên gì
+  - bạn là người hay máy
+  - hay quá
+  - cam on ban
+
+out_of_scope:
+  - hôm nay trời có mưa không
+  - giải giúp bài toán này
+  - giá vàng hôm nay
+  - đặt vé xem phim
+  - viết cho mình bài thơ
+  - tỉ số trận bóng tối qua
+  - đặt phòng khách sạn giúp mình
+  - công thức nấu canh chua
+  - chứng khoán hôm nay thế nào
+  - đặt taxi giúp mình
+  - kể chuyện cho mình nghe
+  - làm bài tập tiếng Anh
